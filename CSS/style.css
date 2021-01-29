@@ -370,6 +370,12 @@
   /* END OUR TEAM */
 
   /* CLIENTS */
+
+  .clients{
+    padding-top: 96px;
+    padding-bottom: 92px;
+  }
+
   .clients .container{
     display: block;
     align-items: center;
@@ -382,6 +388,7 @@
   .clients-heading{
     margin: 0;
     padding: 0;
+    margin-bottom: 50px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -391,6 +398,34 @@
     letter-spacing: 0.03em;
 
     color: #212121;
+  }
+
+  .clients-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .clients-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+    border-radius: 4px;
+  }
+
+  .clients-link:hover,
+  .clients-link:focus{
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+
+  .icon{
+    fill: currentColor;
   }
   /* END CLIENTS */
   
@@ -404,9 +439,12 @@
   }
   
   .footer .container {
-    display: block;
+    display: flex;
+    align-items: baseline;
   }
-  
+  .footer-adress-div{
+    margin-right: 70px;
+  }
   .footer-adress-list {
     display: flex;
     flex-direction: column;
@@ -466,8 +504,40 @@
   .footer-adress-items .footer-link:focus {
     color: var(--accent-color);
   }
+
+  .join-us-text{
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--hero-heading-color);
+  }
   
+  .social-list-join-us{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-list-join-us .social-list-icons:not(:last-child){
+    margin-right: 10px;
+  }
   
+  .social-list-join-us .social-items{
+    background-color: #44454E;
+    color: var(--hero-heading-color);
+  }
+
+  .social-list-join-us .social-items:hover,
+  .social-list-join-us .social-items:focus{
+    background-color: var(--accent-color);
+  }
   /* END FOOTER */
   
   /* PORTFOLIO STYLES */
@@ -503,6 +573,9 @@
   }
   
   /* BUTTON */
+  .button{
+    cursor: pointer;
+  }
   .nav-project-items .button {
     padding: 6px 22px;
     border: none;
@@ -550,6 +623,16 @@
     margin-bottom: 30px;
     list-style: none;
   }
+  .project-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
   
   .project-items:nth-child(3n){
     margin-right: 0;
@@ -568,7 +651,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
   
   .project-items .project-item-heading {
     margin: 0;
@@ -593,8 +675,21 @@
   
   .project-info{
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
   }
   
+  .project-card-link{
+    display: block;
+    border: 1px solid #EEEEEE;
+  }
+
+  .project-card-link:hover,
+  .project-card-link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
   /* END PROJECTS */
   
