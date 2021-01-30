@@ -623,6 +623,7 @@
     margin-right: 30px;
     margin-bottom: 30px;
     list-style: none;
+    border: 1px solid #EEEEEE;
   }
   .project-text{
     font-family: Roboto;
@@ -676,15 +677,11 @@
   
   .project-info{
     padding: 20px 24px;
-
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
   }
   
   .project-card-link{
     display: block;
-    border: 1px solid #EEEEEE;
+    outline: 1px solid #EEEEEE;
   }
 
   .project-card-link:hover,
